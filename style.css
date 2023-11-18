@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Livvic:wght@200;300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #72424e;
+}
+
+body {
+
+  height: 100vh;
+}
+
+
+.flex {
+  display: flex;
+}
+
+/*estilo cabeçalho*/
+.navbar-brand img {
+  height: 120px;
+  position: fixed;
+  border-radius: 100%;
+}
+
+.offcanvas-body {
+  background: #72424e5c;
+}
+
+.offcanvas-body ul {
+  padding: 5px;
+}
+
+header li {
+  font-size: 30px;
+
+}
+
+header a:hover {
+  font-family: "Cedarville Cursive", cursive;
+  text-transform: lowercase;
+
+}
+
+/*main*/
+
+section img {
+
+  height: 50px;
+  width: 50px;
+
+
+}
+
+section {
+  display: flex;
+  align-items: center;
+  padding: 4% 120px;
+}
+
+section .topo .topo-new .flex {
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+}
+
+.topo-new h2 {
+  color: #ede6db;
+  font-size: 34px;
+  line-height: 40px;
+  font-family: 'Livvic', sans-serif;
+}
+
+.topo .topo-new p {
+  color: #ede6db;
+  font-size: 25px;
+  line-height: 40px;
+  font-family: 'Livvic', sans-serif;
+}
+
+.topo .topo-new h2 span {
+  color: #ed4300;
+}
+
+.topo .topo-new p span {
+  color: #00edd1;
+}
+
+.topo .topo-new p {
+  color: #ede6db;
+  margin: 40px 0;
+}
+/*botao*/
+.btn-contato button {
+
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #c8677f;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.btn-contato button:hover {
+  text-transform: lowercase;
+  color: #72424e;
+  background-color: #c8677f;
+  box-shadow: 0px 0px 8px #ae3453;
+  font-family: 'Livvic', sans-serif;
+  transform: scale(1.05);
+  transition: .2s;
+}
+
+/*tecnologias*/
+
+.section {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.flex {
+  padding-top: 5%;
+
+}
+.section .interfaces h2 {
+  color: #ede6db;
+  font-size: 34px;
+  line-height: 40px;
+  font-family: 'Livvic', sans-serif;
+}
+
+.section .interfaces p {
+  color: #ede6db;
+  font-size: 25px;
+  line-height: 40px;
+  font-family: 'Livvic', sans-serif;
+}
+
+.section .interfaces h2 span {
+  font-family: "Cedarville Cursive", cursive;
+  text-transform: lowercase;
+  color: #ed4300;
+}
+
+
+
+.especialidades-box{
+  padding-left: 15px;
+}
+.especialidades-box img {
+  border-radius: 100%;
+  padding-top: 4%;
+
+}
+/*formulario*/
+.form-box h2{
+    color: #ede6db;
+    font-size: 34px;
+    line-height: 40px;
+    font-family: 'Livvic', sans-serif;
+  }
+.form-box p {
+    color: #ede6db;
+    font-size: 25px;
+    line-height: 40px;
+    font-family: 'Livvic', sans-serif;
+  }
+/*insert*/
+
+.form-box{
+   padding: 30px 40px;
+  width: 50%;
+  border-radius:15px;
+}
+
+form .input-group{
+  margin-bottom: 15px;
+}
+form .input-group label{
+  color: #ede6db;
+  font-size: 34px;
+  line-height: 40px;
+  font-family: 'Livvic', sans-serif;
+}
+
+form .input-group input{
+  width: 100%;
+  height: 47px; 
+  background-color: #c8677f;
+  border-radius: 20px;
+  outline: none;
+  border: 2px solid transparent;
+  padding: 15px;
+  font-size: 15px;
+ 
+  transition: all 0.4s ease;
+}
+form .input-group input:focus{
+  border-color: #ff008869;
+}
+
+form .input-group button{
+  width: 100%;
+  height: 47px;
+  background: #FF008A;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  margin-top: 15px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+footer a{
+  text-decoration: none;
+  background: none;
+}
