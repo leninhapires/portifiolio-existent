@@ -6,12 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/script.js"></script>
     <!--fontes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;1,200&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
     <!--bootstrap-->
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -30,8 +38,6 @@
                 </div>
 
                 <nav class="navbar navbar-expand-lg fixed-top">
-
-                    <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
                         aria-label="Toggle navigation">
@@ -40,20 +46,29 @@
                     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
                         aria-labelledby="offcanvasNavbarLabel">
                         <div class="offcanvas-header">
-                            
+
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                                 aria-label="Close"></button>
                         </div>
 
                         <!--menu-->
+
                         <div class="offcanvas-body">
-                            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">                                                               
+                            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#projetos">PROEJETOS</a>
+                                    <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#sobre">SOBRE</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#contatos">CONTATOS</a>
+                                    <a class="nav-link active" aria-current="page" href="#projetos">PROJETOS</a>
                                 </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#contatos">CONTATO</a>
+                                </li>
+
                             </ul>
                         </div>
                     </div>
@@ -64,7 +79,7 @@
     </header>
 
     <main>
-        <section class="section">
+        <section class="section" id="home">
             <div class="interfaces-topo container text-center">
                 <div class="row justify-content-center">
                     <div class="col">
@@ -72,123 +87,174 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col">
-                                    <img src="img/persona.png" alt="">
+                                    <img class="imagem" src="img/persona.png" alt="">
                                 </div>
-                                <div class="col">
-                                    <h1>ANÁLISTA E DESENVOLVEDORA DE<br> SISTEMAS </h1>
+                                <div class="col texto">
+                                    <p>Olá 👋🏼,Bem Vindo!</p>                                 
+                                    <div class="box">
+                                        <div class="estatic">Eu Sou</div>
+                                        <ul class="dinamic">
+                                            <li><span>Francilene de Souza</span></li>
+                                            <li><span>Desenvolvedora full-stak</span></li>
+                                            <li><span>Analista de sistemas</span></li>
+                                            <li><span>universitaria</span></li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row but">
+                                   
+                                    <a href=#contatos><button>Contato</button></a>
                                 </div>
                             </div>
-
                         </div>
                     </div>
-                    <!--ESPECIALIDADES-->
+        </section>
+    </main>
+    <!--sobre-->
 
-                    <h1>Minhas Tecnologias</h1>
+    <section id="sobre" class="section">
+
+        <div class="interfaces-titulo container">.
+            <h1>Sobre mim </h1>
+            <div class="row">
+
+                <p class="text">Desenvolvedora full-stack apaixonada por desafios tecnológicos, nascida há 23 anos,
+                    trazendo uma energia vibrante para o mundo da programação. Minha jornada profissional é marcada por
+                    uma compreensão das metodologias ágeis, com destaque em Scrum.<br>
+                    Além de minhas habilidades técnicas, minha abordagem colaborativa, focada no trabalho em equipe e na
+                    entrega contínua, reflete meu compromisso em criar ambientes de desenvolvimento que promovem a
+                    eficiência e a inovação. Estou sempre buscando aprimorar minhas habilidades e explorar novas
+                    tecnologias. Com entusiasmo e paixão pela programação, sou uma profissional excepcionalmente
+                    dedicada e pronta para enfrentar os desafios dinâmicos do universo tech.
+                </p>
+            </div>
+            <div class="skiils-body">
+                <div class="col">
+                    <div class="titulo-skill">
+                        <h2>Hard</h2>
+                    </div>
+                    <p class="skills">
+                        <span>html</span>
+                        <span>css</span>
+                        <span>JavaScript</span>
+                        <span>c</span>
+                        <span>node.js</span>
+                        <span>git</span>
+                        <span>github</span>
+                        <span>bootstrap</span>
+                    </p>
+                </div>
+                <div class="col">
+                    <div class="titulo-skill">
+                        <h2>soft</h2>
+                    </div>
+                    <p class="skills">
+                        <span>proatividade</span>
+                        <span>Trabalho em equipe</span>
+                        <span>Resolução de problemas</span>
+                        <span>Relacionamento interpessoal</span>
+                        <span>Criatividade</span>
+
+                    </p>
+                </div>
+            </div>
+            <!--PROJETOS-->
+
+            <section id="projetos" class="section">
+
+                <div class="interfaces container">
+                    <h1>Meus Projeto</h1>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+
+                                    <h5 class="card-title">website</h5>
+                                    <p class="card-text">Esse projeto estou trabalhando uma pagina de turismo,onde
+                                        divulgo
+                                        pousadas,comercios entre outros,foi utilizado bootstrap ,javaScript.</p>
+                                    <a href="https://curimataimg.netlify.app/" class="btn btn-primary">ver ✨</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+
+                                    <h5 class="card-title">Carrinho de compras</h5>
+                                    <p class="card-text">Este projeto foi desenvolvido em um curso onde estava
+                                        aprendendo a usar JavaScript. O intuito desse projeto é somar e subtrair o valor
+                                        e a quantidade de itens adicionados ao carrinho de compras.</p>
+                                    <a href="https://leninhapires.github.io/ShopCard/" class="btn btn-primary">ver
+                                        ✨</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
 
-
-                <div class="flex">
-                    <div class="especialidades-box">
-                        <img src="img/html.png" alt="">
-
-                    </div>
-                    <div class="especialidades-box">
-                        <img src="img/css.png" alt="">
-
-
-                    </div>
-                    <div class="especialidades-box">
-                        <img src="img/boot.png" alt="">
-
-                    </div>
-                    <div class="especialidades-box">
-                        <img src="img/git.png" alt="">
-
-                    </div>
-                    <div class="especialidades-box">
-                        <img src="img/hub.png" alt="">
-
-                    </div>
-                    <div class="especialidades-box">
-                        <img src="img/js.png" alt="">
-
-                    </div>
-                    <div class="especialidades-box">
-                        <img src="img/py.png" alt="">
-
-                    </div>
-                    <div class="especialidades-box">
-                        <img src="img/nodejs.png" alt="">
-                    </div>
-                    <div class="especialidades-box">
-                        <img src="img/c.png" alt="">
-                    </div>
-                    </div>
-                    </div>
-        </section>
-        <!--PROJETOS-->
-
-        <section id="projetos" class="section">
-            
-            <div class="interfaces container">
-                <h1>Meus Projeto</h1>
-                <div class="row">
-                    <div class="col-sm-6">
-                      <div class="card">
-                        <div class="card-body">
-                            <img src="img/print.webp" class="card-img-top" alt="..." style="height: 300px;">
-                          <h5 class="card-title">website</h5>
-                          <p class="card-text">Esse projeto estou trabalhando uma pagina de turismo,onde divulgo pousadas,comercios entre outros.</p>
-                          <a href="https://curimataimg.netlify.app/" class="btn btn-primary">ver ✨</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-6">
-                      <div class="card">
-                        <div class="card-body">
-                            <img src="img/print.webp" class="card-img-top" alt="..." style="height: 300px;">
-                          <h5 class="card-title">Carrinho de compras</h5>
-                          <p class="card-text">esse projeto foi desenvolvido em curso onde estava aprendo a usar js<br><br></p>
-                          <a href="https://leninhapires.github.io/ShopCard/" class="btn btn-primary">ver ✨</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                
-                   </div>
-
-        </section>
-        <section id="contatos" class="section">         
+            </section>
+            <section id="contatos" class="section">
                 <div class="container-fluid">
-                  <div class="row">
-                    <div class="col" id="sobre">
-                      <h1>CONTATOS</h1>
-                      <p>Para etrar em contato mande um e-mail  para <span>assistentefrancilene@hotmail.com</span> ou entre em contato pelo whatsapp <span>(38)99740-4136</span>                  
-                      </p>
+                    <div class="row">
+                        <div class="col form">
+                            <form action="https://formsubmit.co/assistentefrancilene@hotmail.com"method="POST" class="card-form">
+                                <div id="msgError"></div>
+                                <div id="msgSuces"></div>
+
+                                <label id="labelnome" for="nome">Nome</label>
+                                <input type="text" id="nome" placeholder="ex:joão" required>
+
+                                <label id="labelsobrenome" for="sobrenome">Sobrenome</label>
+                                <input type="text" id="sobrenome" name="sobrenome" placeholder="ex:jose">
+
+                                <label id="labelemail" for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="ex:alguem@email.com">
+
+                                <label id="labeltelefone" for="telefone">Contato</label>
+                                <input type="tel" id="telefone" placeholder="(xx) xxxxx-xxxx">
+
+                                <label for="caixaDeTexto">Caixa de Texto:</label>
+                                <input type="text" id="caixaDeTexto" name="caixaDeTexto">
+
+                                <div class="buton">
+                                    <button id="btn" type="submit" >Enviar</button>
+                                </div>
+                                <input type="hidden" name="_subject" value="Novo Contato!">
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="text" name="_honey" style="display: none;">
+                            </form>
+
+
+
+                        </div>
                     </div>
-                    </div>
-                    </div>
-                    </section>
+                </div>
+            </section>
 
 
 
 
-    </main>
-    <footer class="bg-light text-center text-lg-start">
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            © 2023 Copyright:
-            <a class="text-dark" href="https://mdbootstrap.com/">Francilene de Souza Pires</a>
-            <img src="img/logo.png" alt="" style="background-color: transparent; height: 70px;">
-        </div>
-        <!-- Copyright -->
-    </footer>
+        
+            <footer class="footer">
+                <!-- Copyright -->
+                <div class="text-center p-3" ">
+                    © 2023 Copyright:
+                    <a class="text-dark" href="https://mdbootstrap.com/">Francilene de Souza Pires</a>
+                    <img src="img/logo.png" alt="" style="background-color: transparent; height: 70px;">
+                </div>
+                <!-- Copyright -->
+            </footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+                crossorigin="anonymous"></script>
+            <script src="js/scroll.js"></script>
+            <script src="js/cadastro.js"></script>
 </body>
 
 </html>

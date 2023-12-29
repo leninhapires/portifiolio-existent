@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2? family= Montserrat+Alternates:ital,wght@0,100;1,200 & display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #180430;
+
+}
+
+body {
+  min-height: 100vh;
+  height: 100vh;
+}
+
+
+.flex {
+  display: flex;
+}
+
+/*estilo cabeçalho*/
+p {
+  color: #efe8e0;
+  font-family: 'Montserrat Alternates', sem serifa;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.col p {
+  font-size: 15px;
+}
+
+nav {
+  height: 50px;
+}
+
+
+nav li {
+  padding-left: 25px;
+}
+
+.navbar-toggler-icon {
+  background-color: #ede6db;
+  color: blueviolet;
+  border-radius: 2px;
+}
+
+button.btn-close {
+  background-color: #ede6db;
+  color: blueviolet;
+}
+
+.offcanvas-body ul {
+  padding: 5px;
+  background-color: rosybrown;
+  margin-top: 50px;
+}
+
+header li {
+  font-size: 20px;
+  background-color: rosybrown;
+
+}
+
+header a:hover {
+  background: #8660b4;
+  transition: 2s;
+  border-radius: 50px;
+}
+
+.section {
+  padding-top: 100px;
+
+}
+
+/*main*/
+section .col img {
+
+  height: 50vh;
+  width: 50vh;
+  
+}
+
+section img {
+  visibility: hidden;
+  height: 50px;
+  width: 50px;
+
+}
+
+section h1 {
+  visibility: hidden;
+  font-family: 'Courier Prime', monoespaçado;
+  color: #efe8e0;
+}
+section h2{
+  font-family: 'Courier Prime', monoespaçado;
+  color: #efe8e0;
+}
+.box {
+  display: inline-flex;
+  align-items: baseline;
+}
+
+.box .estatic {
+  color: #ede6db;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.box .dinamic {
+  margin-left: 15px;
+  line-height: 90px;
+  height: 90px;
+  overflow: hidden;
+
+
+}
+
+.dinamic li {
+  display: flex;
+  color: #ed4300;
+  list-style: none;
+  font-size: 25px;
+  font-weight: 500;
+  left: 0;
+  position: relative;
+  top: 0;
+  animation: slide 6s steps(4) infinite;
+
+}
+
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+
+.dinamic li span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  border-left: 2px solid #fff;
+  animation: typing 1.5s steps(20)infinite;
+  background-color: #180430;
+}
+
+.dinamic li span {
+  position: relative;
+}
+
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}
+
+section .col p {
+  padding-top: 75px;
+
+}
+
+section {
+  display: flex;
+  align-items: center;
+}
+
+section .topo .topo-new .flex {
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+}
+
+.topo .topo-new p {
+  color: #ede6db;
+  font-size: 25px;
+  line-height: 40px;
+  font-family: 'Montserrat Alternates', sem serifa;
+}
+
+
+.but button {
+  height: 50px;
+  width: 200px;
+  border-radius: 30px;
+  color: #ede6db;
+  background: #8660b4;
+  border: 2px #ede6db solid;
+}
+
+.but button:hover {
+  background: #180430;
+}
+
+.row .but {
+  padding-left: 500px;
+}
+
+
+/*sobre*/
+
+.section {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skiils-body {
+  display: inline-flex;
+  justify-content: center;
+}
+
+.interfaces-titulo p span {
+  color: aquamarine;
+  display: grid;
+  font-size: 25px;
+}
+
+.col .skills {
+  font-family: 'Courier Prime', monoespaçado;
+}
+
+/*projeto*/
+
+
+
+.card {
+  visibility: hidden;
+  height: 150px;
+  width: 500px;
+}
+
+.col-sm-6 {
+  flex: 0 0 auto;
+  width: 50px;
+}
+
+.card .card-body h5 {
+  font-family: 'Montserrat Alternates', sem serifa;
+  color: greenyellow;
+  font-weight: 700;
+}
+
+.card .card-body p {
+  font-family: 'Montserrat Alternates', sem serifa;
+  color: rosybrown;
+  font-weight: 700;
+}
+
+.card a {
+  background-color: #ed4300;
+  border: none
+}
+
+.card a:hover {
+  background-color: greenyellow;
+  border: #ed4300;
+}
+
+/*contato*/
+.section #contatos{
+  padding-top: 10%;
+}
+.card-form {
+  background: #8660b4;
+  justify-content: baseline;
+  visibility: hidden;
+  display: grid;
+
+}
+
+.card-form label {
+  padding: 15px 15px;
+  font-family: 'Courier Prime', monoespaçado;
+  color: #180430;
+  font-size: 25px;
+  background: transparent;
+}
+
+.card-form input {
+  padding: 5px 5px;
+  border: none;
+  background: transparent;
+}
+
+.card-form ::placeholder {
+  border-bottom: 2px solid #180430;
+  color: #e8a387;
+  font-size: 20px;
+}
+.card-form #caixaDeTexto{
+  height: 100px;
+}
+
+.card-form button {
+  height: 50px;
+  width: 100%;
+  float: left;
+  color: #aa46f6;
+  background-color: antiquewhite;
+  border: none;
+  margin: 8px;
+}
+
+.card-form button:hover {
+  height: 50px;
+  width: 100%;
+  float: left;
+  color: antiquewhite;
+  background-color: #6718a38a;
+
+}
+
+#msgError {
+  text-align: center;
+  color: rgb(251, 40, 40);
+  background-color: rgba(243, 15, 15, 0.248);
+  padding: 10px;
+  border-radius: 10px;
+  display: none;
+}
+
+#msgSuces {
+  text-align: center;
+  color: green;
+  background-color: rgb(106, 182, 106);
+  padding: 10px;
+  border-radius: 10px;
+  display: none;
+}
+
+/*footer*/
+footer{
+  padding-top:100px;
+  width:100%;
+  
+}
+footer .text-center{
+  background-color: #8660b4;
+  width: 100%;
+  height: 70px;
+
+}
+footer a {
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background: none;
+}
+
+/*scrool*/
+.imagem {
+  visibility: hidden;
+}
+
+.text {
+  visibility: hidden;
+}
