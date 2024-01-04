@@ -7,8 +7,7 @@ sr.reveal(".text", { duration: 1000 });
 window.sr = ScrollReveal({ reset: true });
 sr.reveal(".card", { duration: 1000 });
 
-window.sr = ScrollReveal({ reset: true });
-sr.reveal(".card-form", { duration: 1000 });
+
 
 window.sr = ScrollReveal({ reset: true });
 sr.reveal("h1", { duration: 1000 });

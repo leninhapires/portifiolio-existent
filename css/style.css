@@ -78,7 +78,7 @@ section .col img {
 
   height: 50vh;
   width: 50vh;
-  
+
 }
 
 section img {
@@ -93,10 +93,12 @@ section h1 {
   font-family: 'Courier Prime', monoespaçado;
   color: #efe8e0;
 }
-section h2{
+
+section h2 {
   font-family: 'Courier Prime', monoespaçado;
   color: #efe8e0;
 }
+
 .box {
   display: inline-flex;
   align-items: baseline;
@@ -224,16 +226,21 @@ section .topo .topo-new .flex {
 }
 
 /*projeto*/
-
-
-
+.interfaces .col{
+  justify-content: center;
+  display: flex;
+  
+}
 .card {
+  display: flex;
+  flex-wrap: nowrap;
   visibility: hidden;
   height: 150px;
   width: 500px;
 }
 
 .col-sm-6 {
+  display: inline-flex;
   flex: 0 0 auto;
   width: 50px;
 }
@@ -261,13 +268,12 @@ section .topo .topo-new .flex {
 }
 
 /*contato*/
-.section #contatos{
-  padding-top: 10%;
-}
+
 .card-form {
+  border-radius: 15px;
   background: #8660b4;
   justify-content: baseline;
-  visibility: hidden;
+
   display: grid;
 
 }
@@ -291,7 +297,8 @@ section .topo .topo-new .flex {
   color: #e8a387;
   font-size: 20px;
 }
-.card-form #caixaDeTexto{
+
+.card-form #caixaDeTexto {
   height: 100px;
 }
 
@@ -302,7 +309,7 @@ section .topo .topo-new .flex {
   color: #aa46f6;
   background-color: antiquewhite;
   border: none;
-  margin: 8px;
+
 }
 
 .card-form button:hover {
@@ -333,17 +340,31 @@ section .topo .topo-new .flex {
 }
 
 /*footer*/
-footer{
-  padding-top:100px;
-  width:100%;
-  
-}
-footer .text-center{
-  background-color: #8660b4;
-  width: 100%;
-  height: 70px;
+footer {
+  padding-top: 10%;
+  position: absolute;
+  width: 100vh;
+  background: transparent;
+
 
 }
+
+footer p {
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+
+
+}
+
+footer div {
+
+  background-color: transparent;
+  width: 100%;
+
+
+}
+
 footer a {
   justify-content: center;
   align-items: center;
@@ -359,5 +380,69 @@ footer a {
 .text {
   visibility: hidden;
 }
- /*cookie*/
+
+/*cookie*/
+@media screen and (min-width: 200px) and (max-width: 510px){
+  .section {
+    width: 100vh;
+  }
  
+  .box {
+    display: grid;
+  }
+  .cabecalho{
+    display: grid;
+    justify-content: center;
+  }
+  .card{
+    display: block;
+    width: 100%;
+  }
+  .row {
+    display: grid;
+  }
+
+  .container {
+    width: 100%;
+  }
+  footer {
+    justify-content: center;
+    padding-top:100%
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 700px) {
+  .section {
+    width: 100vh;
+  }
+ 
+  .box {
+    display: grid;
+  }
+  .card{
+    display: block;
+    width: 100%;
+  }
+  .row {
+    display: grid;
+  }
+
+  .container {
+    width: 100%;
+  }
+  footer {
+    justify-content: center;
+    padding-top:50%
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .section {
+    width: 100vh;
+  }
+ 
+  footer {
+    justify-content: center;
+    padding-top: 100%;
+  }
+}
