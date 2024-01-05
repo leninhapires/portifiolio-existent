@@ -384,7 +384,7 @@ footer a {
 /*cookie*/
 @media screen and (min-width: 200px) and (max-width: 510px){
   .section {
-    width: 100vh;
+    width: 100%;
   }
  
   .box {
