@@ -59,6 +59,7 @@ button.btn-close {
 header li {
   font-size: 20px;
   background-color: rosybrown;
+  
 
 }
 
@@ -129,6 +130,7 @@ section h2 {
   position: relative;
   top: 0;
   animation: slide 6s steps(4) infinite;
+  font-family: 'Courier Prime', monoespaçado;
 
 }
 
@@ -383,8 +385,11 @@ footer a {
 
 /*cookie*/
 @media screen and (min-width: 200px) and (max-width: 510px){
+  .body{
+    height: 100vh;
+  }
   .section {
-    width: 100%;
+    width: 100vh;
   }
  
   .box {
